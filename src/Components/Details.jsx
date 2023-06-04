@@ -11,7 +11,7 @@ function Detail() {
           <div className="absolute mx-auto top-72 pt-14 right-32 left-32 h-52 bg-gray-100 max-w-5xl">
             <h1 className="font-bold text-5xl mb-6">GUDEG</h1>
           </div>
-          <img src="gudeg2.jpg" className="mx-auto  mb-10"></img>
+          <img src=".jpg" className="mx-auto  mb-10"></img>
           <p className="text-justify text-sm">
             Gudeg adalah hidangan khas Provinsi Daerah Istimewa Yogyakarta yang
             terbuat dari nangka muda yang dimasak dengan santan. Perlu waktu

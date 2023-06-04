@@ -1,10 +1,20 @@
+import { Button } from "@material-tailwind/react";
+import {
+  CloudArrowUpIcon,
+  ArrowLongRightIcon,
+  ArrowPathIcon,
+  BookmarkIcon,
+} from "@heroicons/react/24/outline";
+import { useNavigate } from "react-router-dom";
+
 export default function Seh() {
+  const navigate = useNavigate();
   return (
     <div className="bg-white ">
       <div className=" py-0 mx-auto rounded-lg  grid max-w-2xl grid-rows-1 grid-flow-col gap-8 gap-y-16  sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
         <div>
           <h2 className="text-3xl font-bold tracking-tight pb-5 border-b-8  border-yellow-600 text-textColor sm:text-4xl">
-            Wisata Kuliner Yoyakarta
+            Kuliner Yoyakarta
           </h2>
           <p className="mt-16 text-gray-500 text-start text-lg">
             <strong>Y</strong>ogyakarta.Selain dikenal sebagai kota pelajar,
@@ -16,6 +26,10 @@ export default function Seh() {
             Berikut adalah kumpulan kuliner khas jogja yang menurut tim Madang
             ombe menarik untuk di coba.
           </p>
+          <Button onClick={() => navigate("/K_makanan")} variant="text" className="flex items-center gap-2 mx-auto">
+              Baca Selengkapnya
+              <ArrowLongRightIcon strokeWidth={2} className="h-5 w-5" />
+            </Button>
         </div>
         <div className="grid grid-cols-1 grid-rows-1 row-span-3 gap-4  sm:gap-10 lg:gap-112  ">
           <img

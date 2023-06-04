@@ -3,7 +3,7 @@ import NavBar from '../Components/NavBar'
 import Details from '../Components/Details'
 import Footer from '../Components/Footer'
 import ViewAll from '../Components/ViewAll'
-import All from '../Components/All'
+
 
 function Review() {
   return (

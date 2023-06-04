@@ -1,56 +1,43 @@
-import axios from "axios";
-import { useState } from "react";
+import React from "react";
 import {
-  Card,
-  CardHeader,
-  CardBody,
-  Typography,
-  Button,
-} from "@material-tailwind/react";
-import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
-import "../App.css";
+    Card,
+    CardHeader,
+    CardBody,
+    Typography,
+    Button,
+  } from "@material-tailwind/react";
+  import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 
-export default function Search() {
-  const [data, setData] = useState([]);
-  const [records, setRecords] = useState([]);
-  const Filter = (event) => {
-    setRecords(
-      data.filter((f) => f.title.toLowerCase().includes(event.target.value))
-    );
-  };
+function Kategori_M() {
   return (
     <div>
-      <div className="well" />
-      <div className="content-top mb-24">
+    <figure className="relative h-full w-full mt-14">
+      <img className="h-full w-full " src="kategori2.jpg" alt="nature image" />
+      <figcaption className="absolute bottom-52 left-2/4 flex h-52 w-[calc(100%-45rem)] -translate-x-2/4 justify-between rounded-xl border border-white bg-white/80 py-4 px-6 shadow-lg shadow-black/50 saturate-200 backdrop-blur-sm">
+        <div className="mx-auto">
+          <Typography className="text-[5rem] font-extrabold" color="blue-gray">
+            KULINER JOGJA
+          </Typography>
+          <Typography color="gray" className="mt-2 font-normal">
+          everything is well
+          </Typography>
+        </div>
+      </figcaption>
+    </figure>
+    <div className="content-top mb-24">
         <div className="row grid grid-rows grid-flow-col gap-4 mx-24">
           <div className="container h-auto">
             <div className="content-title mt-24 pb-10 border-b-8 w-96  border-yellow-600 text-5xl text-left font-extrabold text-textColor">
-              <h1>Refreshing</h1>
+              <h1>Makan</h1>
             </div>
             <div className="content-subtitle text-start text-textColor mt-5 w-[35rem] ">
-            "Di setiap sudut Jogja membawa cerita masing-masing bagi pengunjungnya. Sama sepertiku yang punya cerita denganmu disana."
+            "Food is our common ground, a universal experience".
             </div>
           </div>
         </div>
       </div>
+      <div className="mt-52">
       <div className="grid place-items-start pb-32 md:place-items-center">
-        <Card className="mt-24 h-44 w-3/5 bg-gray-200 mb-40 sm:mx-auto">
-          <div className="text-3xl text-black mt-5">
-            Telusuri Dengan Cepat ?
-          </div>
-          <div className="flex mx-auto mt-12">
-            <div className="flex border border-purple-200 rounded">
-              <input
-                type="text"
-                className="block w-full px-4 py-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                placeholder="Search..."
-              />
-              <button className="px-4 text-white bg-purple-600 border-l rounded">
-                Search
-              </button>
-            </div>
-          </div>
-        </Card>
         <Card className="flex-row w-full max-w-[70rem] m-3 h-48">
           <CardHeader
             shadow={false}
@@ -79,6 +66,10 @@ export default function Search() {
           </CardBody>
         </Card>
       </div>
+      </div>
     </div>
+    
   );
 }
+
+export default Kategori_M;
